@@ -1,0 +1,175 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 70%;
+    max-width: 1920px;
+    background-color:rgb(19, 19, 24);
+    margin: 10px auto;
+    color: #fff;
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(12, 12, 12, 0.878);
+    border-radius: 6px;
+}
+
+nav div.logo{
+    padding-left: 30px;
+    font-size: 35px;
+    font-variant: small-caps;
+}
+
+nav div.menu ul{
+    list-style-type: none;
+}
+
+nav div.menu ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+nav div.menu ul li:hover{
+    background-color: yellow;
+    color: rgba(12, 12, 12, 0.878);
+    transition: .3s;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+main div.title h1{
+    font-size: 50px;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 20px 0px;
+    text-shadow: 1px 1px 2px  rgba(192, 183, 183, 0.979) ;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container-cards .option_planos{
+    background-color:rgb(47, 57, 75);
+    border-radius: 6px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    opacity: .6;
+}
+
+.container-cards .option_planos:hover {
+    opacity: 1;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.container-cards .option_planos:active{
+    transform: translateY(-50px);
+}
+
+.option_planos .option-planos__title h2{
+    font-variant: small-caps;
+    font-size: 30px;
+    margin: 0 30px;
+    padding: 20px 0 10px;
+    border-bottom: 3px solid yellow;
+}
+
+.option_planos .option-planos__text{
+    margin: 0 30px;
+    flex-grow: 1;
+}
+
+.option_planos .option-planos__text p{
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.option_planos .option-planos__text ul li{
+    list-style-position: inside;
+    color: yellow;
+}
+
+.option_planos .option-planos__text ul li span{
+    color: #fff;
+    line-height: 1.7;
+}
+
+.option_planos .option-planos__btn {
+    margin: 0 30px;
+    padding: 10px 0px;
+    font-variant: small-caps;
+    text-align: center;
+    background-color: yellow;
+    color: rgba(15, 16, 46, 0.9) ;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.option_planos .option-planos__btn a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.option_planos .option-planos__btn:hover a{
+    font-weight: 700;
+}
+
+footer{
+    height: 100px;
+}
+
+@media(max-width:1024px){
+    body{
+        width: 95%;
+    }
+}
+
+@media(max-width:768px){
+    body{
+        width: 65%;
+    }
+    nav div.menu ul li{
+        display: none;
+    }
+
+    nav div.logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    main div.title h1{
+    font-size: 35px;
+    }
+    .container-cards{
+        flex-direction: column;   
+    }
+
+    .container-cards .option_planos{
+        height: 350px;
+        margin-top:35px;
+    }
+}
+
+@media(max-width:425px){
+    body{
+        width: 85%;
+    }
+
+    main div.title h1{
+        font-size: 25px;
+    }
+}

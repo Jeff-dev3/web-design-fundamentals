@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body {
+    background-image: linear-gradient( to right, rgb(94, 183, 216),  rgb(10, 183, 216));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+h1.main-title {
+    color: #385555;
+    margin-bottom: 15px;
+}
+
+div.list-wrapper{
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0, .2);
+}
+
+ul.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.list-wrapper li.list-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding: 16px;
+}
+
+div.list-wrapper li.list-item:hover{
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+div.list-wrapper li.list-item .list-item__image img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+div.list-wrapper li.list-item .list-item__contact{
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+div.list-wrapper li.list-item .list-item__contact p:first-child{
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #355;
+}
+
+div.list-wrapper li.list-item .list-item__contact p:last-child, .number{
+    margin: 5px 0 0;
+    color: #aaa;
+}
+
+div.list-wrapper li.list-item .list-item__action{
+    opacity: 0.4;
+    gap: 10px;
+    display: none;
+}
+
+div.list-wrapper li.list-item:hover .list-item__action{
+    display: flex;
+}
+

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ccc;
+}
+
+header.hero{
+    height: 500px;
+    background-image: url(./imagens/bg-3.jpg);
+    background-size: cover;
+    background-position: right center;
+    padding-top: 1px;
+}
+
+.hero-content{
+    margin: 180px auto 0;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1{
+    font-size: 56px;
+    text-shadow: 2px 2px 2px #000;
+    text-transform: uppercase;
+}
+
+.hero-content p{
+    background-color: rgba(0,0,0, .7);
+    border-bottom: 2px solid;
+    font-size: 18px;
+    display: inline-block;
+    padding: 16px;
+    margin-top: 40px
+}
+
+.hero nav ul{
+    margin: 20px 50px 0 0;
+    text-align: right;
+}
+
+.hero nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid #fff;
+    margin-left: 16px;
+}
+
+.hero nav ul li a{
+    text-decoration: none;
+    background-color: rgba(0,0,0, .3);
+    color: #fff;
+    padding: 16px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.hero nav ul li a:hover{
+    background-color: rgba(0,0,0, .7);
+    color: #ccc;
+    transition: .4s;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    max-width: 860px;
+}
+
+section{
+    padding-top: 32px;
+}
+
+article{
+    background-color: #fff;
+    padding:30px 16px;
+    margin-bottom: 40px;
+}
+
+article header h2{
+    border-bottom: 2px solid #a8a2a2;
+    background-color: #eee;
+    padding: 16px;
+
+}
+
+article p{
+    padding: 16px 0;
+    text-align: justify;
+    font-size: 18px;
+    text-indent: 15px;
+}
+
+article .btn{
+    background-color: #a7a4a2;
+    display: inline-block;
+    margin: 15px 0 0;
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+}
+
+article a:hover{
+ transition: .4s;
+ background-color:  #696765;
+}
+
+footer{
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b6c68;
+    letter-spacing: 2px;
+    padding: 30px;
+}
