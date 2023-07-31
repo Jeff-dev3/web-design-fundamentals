@@ -7,26 +7,57 @@ html{
     font: 400 62.5% 'Inter', sans-serif;
 }
 
-p, a, span{
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin: 2.5em 0;
+}
+
+h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+p, a, address{
     font-size: 1.6rem;
+    line-height: 1.4;
 }
 
 span{
     text-transform: uppercase;
 }
 
+nav a{
+    color: inherit;
+}
+
+a.btn{
+    display:inline-block;
+    margin: 4em 0;
+    background-color: var(--primary-color);
+    padding: 1em 3em;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    
+}
+
 .wrapperContainer-dark{
     background-color: #2a2a2a;
-    color: var(--secundary-color)
+    color: var(--secundary-color);
 }
 
 .wrapperContainer-dark2{
     background-color:#003464; 
-    color: var(--secundary-color)
+    color: var(--secundary-color);
 }
 
 .wrapperContainer-hero{
-    background-image: linear-gradient(to top, var(--primary-color), #fef7d0);
+    background-image: linear-gradient(to top, var(--primary-color), #ffffff);
 }
 
 .wrapperContainer-light{
@@ -34,6 +65,80 @@ span{
 }
 
 .container{
-    max-width: 127.6rem;
+    max-width: 127rem;
     margin: auto;
+}
+
+header.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.header .header_nav ul{
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+}
+
+.header .header_nav ul li{
+    text-transform: capitalize;
+}
+
+.header .header_nav a{
+    padding: .75em 1.15em;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+.header .header_nav a:hover{
+    background-color: #000;
+    transition: .3s;
+}
+
+section.heroBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cursos div.cursosContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.escola{
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+}
+
+section.contatos h2{
+    text-align: center;
+}
+
+address{
+    text-align: right;
+    margin: 2.5rem 0;
+}
+
+footer{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p, footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
 }
