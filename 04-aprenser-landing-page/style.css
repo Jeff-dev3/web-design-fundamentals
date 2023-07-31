@@ -1,0 +1,39 @@
+:root{
+    --primary-color: #fed001;
+    --secundary-color: #fafafa;
+}
+
+html{
+    font: 400 62.5% 'Inter', sans-serif;
+}
+
+p, a, span{
+    font-size: 1.6rem;
+}
+
+span{
+    text-transform: uppercase;
+}
+
+.wrapperContainer-dark{
+    background-color: #2a2a2a;
+    color: var(--secundary-color)
+}
+
+.wrapperContainer-dark2{
+    background-color:#003464; 
+    color: var(--secundary-color)
+}
+
+.wrapperContainer-hero{
+    background-image: linear-gradient(to top, var(--primary-color), #fef7d0);
+}
+
+.wrapperContainer-light{
+    background-color: var(--secundary-color);
+}
+
+.container{
+    max-width: 127.6rem;
+    margin: auto;
+}
